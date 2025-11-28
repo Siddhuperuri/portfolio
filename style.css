@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #000;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    background: #e7e7e7;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 50px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-img img {
+    width: 350px;
+}
+
+/* QUICK LINKS */
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background: #e7e7e7;
+}
+
+.quick-links a {
+    padding: 10px 25px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    background: white;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 60px 50px;
+}
+
+.project-grid {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.project-card {
+    width: 48%;
+    background: white;
+    border: 3px solid black;
+}
+
+.window-header {
+    background: #ddd;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-card img {
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* BLOG STACK */
+.blog {
+    padding: 60px 50px;
+    border-top: 3px solid black;
+}
+
+.blog-stack {
+    margin-top: 30px;
+    position: relative;
+}
+
+.blog-card {
+    width: 70%;
+    border: 3px solid black;
+    margin-bottom: -60px;
+    background: white;
+}
+
+.blog-card img {
+    width: 100%;
+    display: block;
+}
+
+.blog-card:nth-child(2) {
+    top: 40px;
+    position: relative;
+}
+
+.blog-card:nth-child(3) {
+    top: 80px;
+    position: relative;
+}
+
+.view-all {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img img {
+        margin-top: 30px;
+    }
+    .project-grid {
+        flex-direction: column;
+    }
+    .project-card {
+        width: 100%;
+    }
+    .blog-card {
+        width: 100%;
+    }
+}
