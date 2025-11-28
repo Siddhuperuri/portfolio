@@ -3,128 +3,104 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-            background: #f5f5f5;
-        }
-        header {
-            background: #111;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            background: #222;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .section {
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 28px;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #111;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-    </style>
+    <title>Retro Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Your Name</h1>
-        <p>Web Designer | UI/UX Designer | Developer</p>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">🖥️</div>
+        <nav>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+            <a href="#">Learn</a>
+            <a href="#">Clone me</a>
+            <a href="#">Find me</a>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello.<br>I'm Mac.</h1>
+            <p>I'm a free retro WebFlow template made by 
+                <a href="#">Mackenzie Child.</a>
+            </p>
+            <button class="btn">Clone me on WebFlow</button>
+        </div>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a passionate designer & developer who loves creating clean and modern digital experiences.</p>
+        <div class="hero-img">
+            <img src="https://i.postimg.cc/c4pQgTq2/mac.png" alt="Mac Graphic">
+        </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Designing</li>
-            <li>UI/UX Design</li>
-            <li>HTML, CSS, JS</li>
-            <li>Logo Designing</li>
-        </ul>
+    <!-- QUICK LINKS -->
+    <section class="quick-links">
+        <a href="#">Blog →</a>
+        <a href="#">Projects →</a>
+        <a href="#">About →</a>
+        <a href="#">Contact →</a>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
+    <!-- PROJECTS -->
+    <section class="projects">
         <h2>Projects</h2>
-        <div class="projects">
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>Description of your project...</p>
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="window-header">2020-04-08-project.html</div>
+                <img src="https://picsum.photos/600/300?random=1" alt="">
+                <div class="content">
+                    <h3>Possimus</h3>
+                    <p>
+                        Officia sit numquam fugiat sint molestiae id. Est modi est at debitis
+                        dolorem. Voluptate quod rem dolores sint molestias maiores.
+                    </p>
+                    <button class="btn">View project</button>
+                </div>
             </div>
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>Description of your project...</p>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="window-header">2020-04-08-project.html</div>
+                <img src="https://picsum.photos/600/300?random=2" alt="">
+                <div class="content">
+                    <h3>Dolorum Ullam Totam</h3>
+                    <p>
+                        Consequatur consequatur et quisquam sit velit. Distinctio dolor et
+                        vitae sint omnis. Sit repellendus consequatur cumque est at atque.
+                    </p>
+                    <button class="btn">View project</button>
+                </div>
             </div>
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>Description of your project...</p>
+
+        </div>
+    </section>
+
+    <!-- BLOG STACK -->
+    <section class="blog">
+        <h2>From the blog</h2>
+        <a class="view-all" href="#">View all blog posts</a>
+
+        <div class="blog-stack">
+            <div class="blog-card">
+                <div class="window-header">2020-04-07-blog.pdf</div>
+                <img src="https://picsum.photos/900/300?random=3" alt="">
+            </div>
+            <div class="blog-card">
+                <div class="window-header">2020-04-06-blog.pdf</div>
+                <img src="https://picsum.photos/900/300?random=4" alt="">
+            </div>
+            <div class="blog-card">
+                <div class="window-header">2020-04-06-blog.pdf</div>
+                <img src="https://picsum.photos/900/300?random=5" alt="">
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-        <p>LinkedIn • GitHub • Instagram</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        © 2025 Your Name — All Rights Reserved
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
