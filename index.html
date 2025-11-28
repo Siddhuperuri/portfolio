@@ -10,14 +10,22 @@
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">🖥️</div>
-        <nav>
-            <a href="#">Projects</a>
-            <a href="#">Blog</a>
-            <a href="#">Learn</a>
-            <a href="#">Clone me</a>
-            <a href="#">Find me</a>
-        </nav>
+        <div class="left">
+            <div class="logo" aria-hidden="true">🖥️</div>
+            <nav>
+                <a href="#">Projects</a>
+                <a href="#">Blog</a>
+                <a href="#">Learn</a>
+                <a href="#">Clone me</a>
+                <a href="#">Find me</a>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </div>
     </header>
 
     <!-- HERO SECTION -->
@@ -25,22 +33,23 @@
         <div class="hero-text">
             <h1>Hello.<br>I'm Mac.</h1>
             <p>I'm a free retro WebFlow template made by 
-                <a href="#">Mackenzie Child.</a>
+                <a href="#" class="link">Mackenzie Child.</a>
             </p>
-            <button class="btn">Clone me on WebFlow</button>
+            <button class="btn primary-animated" id="clone-btn">Clone me on WebFlow</button>
         </div>
 
-        <div class="hero-img">
-            <img src="https://i.postimg.cc/c4pQgTq2/mac.png" alt="Mac Graphic">
+        <div class="hero-img" aria-hidden="true">
+            <!-- placeholder graphic -->
+            <img src="https://i.postimg.cc/c4pQgTq2/mac.png" alt="Retro Mac Illustration">
         </div>
     </section>
 
     <!-- QUICK LINKS -->
-    <section class="quick-links">
-        <a href="#">Blog →</a>
-        <a href="#">Projects →</a>
-        <a href="#">About →</a>
-        <a href="#">Contact →</a>
+    <section class="quick-links" aria-label="Quick links">
+        <a href="#" class="ql">Blog →</a>
+        <a href="#" class="ql">Projects →</a>
+        <a href="#" class="ql">About →</a>
+        <a href="#" class="ql">Contact →</a>
     </section>
 
     <!-- PROJECTS -->
@@ -50,7 +59,7 @@
         <div class="project-grid">
 
             <!-- Project 1 -->
-            <div class="project-card">
+            <article class="project-card" tabindex="0">
                 <div class="window-header">2020-04-08-project.html</div>
                 <img src="https://picsum.photos/600/300?random=1" alt="">
                 <div class="content">
@@ -59,12 +68,12 @@
                         Officia sit numquam fugiat sint molestiae id. Est modi est at debitis
                         dolorem. Voluptate quod rem dolores sint molestias maiores.
                     </p>
-                    <button class="btn">View project</button>
+                    <button class="btn secondary-animated">View project</button>
                 </div>
-            </div>
+            </article>
 
             <!-- Project 2 -->
-            <div class="project-card">
+            <article class="project-card" tabindex="0">
                 <div class="window-header">2020-04-08-project.html</div>
                 <img src="https://picsum.photos/600/300?random=2" alt="">
                 <div class="content">
@@ -73,9 +82,9 @@
                         Consequatur consequatur et quisquam sit velit. Distinctio dolor et
                         vitae sint omnis. Sit repellendus consequatur cumque est at atque.
                     </p>
-                    <button class="btn">View project</button>
+                    <button class="btn secondary-animated">View project</button>
                 </div>
-            </div>
+            </article>
 
         </div>
     </section>
@@ -85,7 +94,7 @@
         <h2>From the blog</h2>
         <a class="view-all" href="#">View all blog posts</a>
 
-        <div class="blog-stack">
+        <div class="blog-stack" aria-hidden="true">
             <div class="blog-card">
                 <div class="window-header">2020-04-07-blog.pdf</div>
                 <img src="https://picsum.photos/900/300?random=3" alt="">
